@@ -8,6 +8,7 @@ import { app } from "./app";
 import { PaymentCreatedListener } from "./events/Listeners/payment-created-listener";
 
 const start = async () => {
+  console.log('Starting...ee.')
   if (!process.env.MONGO_URI) {
     throw new Error("MONGO_URI must be defined");
   }
